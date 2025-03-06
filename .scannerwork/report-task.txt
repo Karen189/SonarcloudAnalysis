@@ -3,5 +3,5 @@ projectKey=eccelenza_sonarcloudanalysis
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.60299
 dashboardUrl=https://sonarcloud.io/dashboard?id=eccelenza_sonarcloudanalysis
-ceTaskId=AZVq-0lj1dE1dNWCY29o
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZVq-0lj1dE1dNWCY29o
+ceTaskId=AZVrFlVAGukeWpAXvTHD
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZVrFlVAGukeWpAXvTHD
