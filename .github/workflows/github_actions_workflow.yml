@@ -1,0 +1,25 @@
+name: "SonarCloudAnalysis"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Updated to the latest version supporting Node.js 20
+        with:
+          fetch-depth: 0
+
+
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master  # Use the correct stable version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+          SONAR_TOKEN: $fdabcf3bd08bfa2c862514b56425b1fe093e4136
+        with:
+          args: >
+            -Dsonar.organization=eccelenza
+            -Dsonar.projectKey=eccelenza_sonarcloudanalysis
+            -Dsonar.python.coverage.reportPaths=coverage.xml
